@@ -1,0 +1,19 @@
+{
+  "@context": "https://linkedsoftwaredependencies.org/bundles/context.jsonld",
+  "@type": "ServerInitializer",
+  "identifier": "urn:solid:server:default",
+  "components": [
+    {
+      "@type": "CliRunner",
+      "mainModulePath": "./",
+      "configFile": "config/default.json"
+    },
+    {
+      "@type": "IdentityProviderInitializer",
+      "settings": {
+        "baseUrl": "https://communitysolidserver-production.up.railway.app",
+        "enablePasswordRegistration": true
+      }
+    }
+  ]
+}

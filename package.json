@@ -59,7 +59,7 @@
     "prepare": "npm run build",
     "release": "commit-and-tag-version",
     "postrelease": "ts-node ./scripts/finalizeRelease.ts",
-"start": "node dist/server.js -c config/idp.json",
+"start": "node dist/server.js -c config/idp.json -b https://communitysolidserver-production.up.railway.app",
     "start:file": "node ./bin/server.js -c config/file.json -f ./.data",
     "start:file-root": "node ./bin/server.js -c config/file-root.json -f ./.data",
     "test": "npm run test:ts && npm run jest",

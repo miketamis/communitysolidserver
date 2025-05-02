@@ -9,6 +9,11 @@
       "configFile": "config/default.json"
     },
     {
+      "@type": "BaseUrlExtractor",
+      "baseUrl": "https://communitysolidserver-production.up.railway.app/",
+      "allowForwardedHost": true
+    },
+    {
       "@type": "IdentityProviderInitializer",
       "settings": {
         "baseUrl": "https://communitysolidserver-production.up.railway.app",
